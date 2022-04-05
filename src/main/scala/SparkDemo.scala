@@ -11,5 +11,5 @@ object SparkDemo extends App {
 
   val df = spark.read.text("build.sbt")
   df.show(truncate = false)
-  val write = df.write.saveAsTable()
+  val write = df.write.csv("C:\\spark\\untitled.newFile.csv")
 }
