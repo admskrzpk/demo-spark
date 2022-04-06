@@ -11,5 +11,5 @@ object SparkDemo extends App {
 
   val df = spark.read.text("build.sbt")
   df.show(truncate = false)
-  val write = df.write.csv("C:\\spark\\untitled.newFile.csv")
+  val write = df.write.text("plik4.txt")
 }
